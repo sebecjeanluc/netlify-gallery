@@ -109,25 +109,25 @@ describe('Character Component Renders Props', () => {
         expect(charDeath).toBeDefined();
     });
 
-    // it("Renders the Character's Race", () => {
-    //     render(<Character { ...samwiseGamgee } />);
-    //     const charRace = screen.getByText(`Race: ${samwiseGamgee.race}`);
+    it("Renders the Character's Race", () => {
+        render(<Character { ...samwiseGamgee } />);
+        const charRace = screen.getByText(`Race: ${samwiseGamgee.race}`);
 
-    //     expect(charRace).toBeDefined();
-    // });
+        expect(charRace).toBeDefined();
+    });
 
-    // it("Renders the Character's Realm", () => {
-    //     render(<Character { ...samwiseGamgee } />);
-    //     const charRealm = screen.getByText(`Realm:${samwiseGamgee.realm}`);
+    it("Renders the Character's Realm", () => {
+        render(<Character { ...samwiseGamgee } />);
+        const charRealm = screen.getByText(`Realm:${samwiseGamgee.realm}`);
 
-    //     expect(charRealm).toBeDefined();
-    // });
+        expect(charRealm).toBeDefined();
+    });
 
-    // it("Renders the Character's Spouse", () => {
-    //     render(<Character { ...samwiseGamgee } />);
-    //     const charSpouse = screen.getByText(`Spouse: ${samwiseGamgee.spouse}`);
+    it("Renders the Character's Spouse", () => {
+        render(<Character { ...samwiseGamgee } />);
+        const charSpouse = screen.getByText(`Spouse: ${samwiseGamgee.spouse}`);
 
-    //     expect(charSpouse).toBeDefined();
-    // });
+        expect(charSpouse).toBeDefined();
+    });
 
 });
